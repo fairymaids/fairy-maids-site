@@ -5,12 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title></title>
-  <div style="text-align:center; margin-top:40px;">
-  <img src="https://github.com/fairymaids/fairy-maids-site/blob/main/fairy%20maids.PNG?raw=true" alt="Fairy Maids | Professional House Cleaning Since 1990" style="max-width:300px; border-radius:15px;">
-</div>
+<title>Fairy Maids | Professional House Cleaning Since 1990</title>
 
-<meta name="description" content="Professional family-owned house cleaning company serving Northern Virginia, Washington DC, and parts of Maryland since 1990. Reliable long-term cleaning teams and outstanding service.">
+<meta name="description" content="Family-owned professional house cleaning company serving Northern Virginia, Washington DC, and Maryland since 1990. Same trusted cleaning teams every visit. Free quotes available.">
 
 <style>
 
@@ -21,137 +18,174 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 line-height:1.6;
 color:#333;
 background:#fff;
 }
 
+/* TOP BAR LOGO */
+
+.topbar{
+text-align:center;
+padding:20px 0;
+}
+
+.topbar img{
+width:110px;
+height:110px;
+border-radius:50%;
+border:4px solid #ff69b4;
+object-fit:cover;
+}
+
+/* HERO */
+
 .hero{
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
 url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1600');
 background-size:cover;
 background-position:center;
 color:white;
 text-align:center;
-padding:120px 20px;
+padding:140px 20px;
 }
 
 .hero h1{
-font-size:52px;
-margin-bottom:20px;
+font-size:54px;
 max-width:900px;
-margin-left:auto;
-margin-right:auto;
+margin:0 auto 20px;
 }
 
 .hero p{
 font-size:22px;
 max-width:850px;
-margin:auto;
-margin-bottom:35px;
+margin:0 auto 25px;
 }
 
 .button{
 display:inline-block;
 background:#ff69b4;
 color:white;
-padding:16px 34px;
+padding:18px 38px;
 text-decoration:none;
-border-radius:40px;
+border-radius:50px;
 font-weight:bold;
 font-size:18px;
-transition:.3s;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+transition:0.3s;
 }
 
 .button:hover{
+transform:translateY(-2px);
 background:#ff4fa3;
 }
 
+.mini{
+margin-top:15px;
+font-size:16px;
+opacity:0.9;
+}
+
+/* TRUST SECTION */
+
+.trust{
+text-align:center;
+padding:60px 20px;
+background:#fff5fa;
+}
+
+.trust h2{
+margin-bottom:15px;
+font-size:32px;
+}
+
+.trust p{
+font-size:18px;
+margin:6px 0;
+}
+
+/* SECTIONS */
+
 .section{
 padding:80px 20px;
-max-width:1150px;
+max-width:1100px;
 margin:auto;
 }
 
 .section-title{
 text-align:center;
-margin-bottom:50px;
+margin-bottom:40px;
 }
 
 .section-title h2{
-font-size:40px;
-margin-bottom:15px;
+font-size:38px;
+margin-bottom:10px;
 }
 
 .section-title p{
-font-size:20px;
+font-size:18px;
 color:#666;
 }
 
+/* GRID */
+
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
 background:#fafafa;
-padding:35px;
-border-radius:18px;
-box-shadow:0 6px 18px rgba(0,0,0,.08);
+padding:30px;
+border-radius:16px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
 .card h3{
-margin-bottom:15px;
 color:#ff69b4;
+margin-bottom:10px;
 }
 
-.highlight{
-background:#fff5fa;
-padding:80px 20px;
-}
+/* CTA */
 
-.highlight-box{
-max-width:1000px;
-margin:auto;
-font-size:22px;
-text-align:center;
-line-height:1.8;
-}
-
-.contact{
+.cta{
 background:#ff69b4;
 color:white;
 text-align:center;
 padding:80px 20px;
 }
 
-.contact h2{
+.cta h2{
 font-size:42px;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
-.contact p{
-font-size:22px;
-margin-bottom:30px;
+.cta p{
+font-size:20px;
+margin-bottom:25px;
 }
 
-.footer{
+/* FOOTER */
+
+footer{
 background:#222;
 color:white;
 text-align:center;
-padding:45px 20px;
+padding:40px 20px;
 }
 
-.footer p{
-margin:8px 0;
+footer p{
+margin:6px 0;
 }
+
+/* MOBILE */
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:36px;
+font-size:34px;
 }
 
 .hero p{
@@ -159,199 +193,109 @@ font-size:18px;
 }
 
 .section-title h2{
-font-size:32px;
+font-size:28px;
 }
 
-.contact h2{
-font-size:32px;
+.cta h2{
+font-size:30px;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
+<!-- LOGO -->
+<header class="topbar">
+  <img src="https://github.com/fairymaids/fairy-maids-site/blob/main/fairy%20maids.PNG?raw=true"
+       alt="Fairy Maids Logo">
+</header>
+
+<!-- HERO -->
 <section class="hero">
 
-<h1>
-Professional House Cleaning Since 1990
-</h1>
+<h1>Trusted House Cleaning Services Since 1990</h1>
 
 <p>
-Family-owned cleaning company proudly serving Northern Virginia, Washington DC, and parts of Maryland with trusted long-term cleaning professionals committed to exceptional work and professionalism.
+Family-owned cleaning company serving Northern Virginia, Washington DC, and Maryland.
+We send the same trusted cleaning teams every visit — never strangers.
 </p>
 
-<a class="button" href="tel:15712325668">
-Call Ibeth: 571-232-5668
-</a>
+<a class="button" href="tel:15712325668">Call Ibeth: 571-232-5668</a>
+
+<p class="mini">Weekly • Biweekly • Monthly Cleaning Available</p>
 
 </section>
 
+<!-- TRUST -->
+<section class="trust">
+
+<h2>Why Homeowners Choose Fairy Maids</h2>
+
+<p>✔ Family-owned since 1990</p>
+<p>✔ Same trusted cleaning team every visit</p>
+<p>✔ Serving Northern VA, DC & Maryland</p>
+<p>✔ Free quotes available</p>
+
+</section>
+
+<!-- SERVICES -->
 <section class="section">
 
 <div class="section-title">
-
-<h2>Why Families Trust Fairy Maids</h2>
-
-<p>
-Reliable cleaning teams, long-term employees, and outstanding attention to detail.
-</p>
-
-</div>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Same Trusted Cleaning Team</h3>
-
-<p>
-Unlike many companies that send different cleaners every visit, we make every effort to keep the same trusted team assigned to your home each time.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Family-Owned Since 1990</h3>
-
-<p>
-For over 30 years we have proudly served families throughout Northern Virginia, Washington DC, and parts of Maryland.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Professional Long-Term Employees</h3>
-
-<p>
-Our staff members are hardworking, well-educated professionals who are valued, rewarded, and committed to delivering outstanding service.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Exceptional Attention To Detail</h3>
-
-<p>
-We know how to make your home sparkle while providing dependable and professional care for your space.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="highlight">
-
-<div class="highlight-box">
-
-<p>
-We are deeply grateful for the opportunity to care for our clients’ homes and believe professionalism, consistency, and trust are the foundation of outstanding service.
-</p>
-
-<br>
-
-<p>
-Weekly, biweekly, and monthly cleaning services are available, but space is limited. Start your week with a sparkling clean home from a team you know and trust.
-</p>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="section-title">
-
 <h2>Our Cleaning Services</h2>
-
-<p>
-Professional residential cleaning tailored to your needs.
-</p>
-
+<p>Reliable residential cleaning tailored to your home</p>
 </div>
 
 <div class="grid">
 
 <div class="card">
-
 <h3>Weekly Cleaning</h3>
-
-<p>
-Keep your home consistently clean and stress-free with scheduled weekly service.
-</p>
-
+<p>Consistent weekly service for a spotless home.</p>
 </div>
 
 <div class="card">
-
 <h3>Biweekly Cleaning</h3>
-
-<p>
-Our most popular option for maintaining a fresh and organized home.
-</p>
-
+<p>Most popular option for busy households.</p>
 </div>
 
 <div class="card">
-
 <h3>Monthly Cleaning</h3>
-
-<p>
-Reliable deep cleaning support to help maintain your home throughout the month.
-</p>
-
+<p>Deep maintenance cleaning once a month.</p>
 </div>
 
 <div class="card">
-
 <h3>Free Estimates</h3>
-
-<p>
-We are always happy to provide free quotes and discuss the best cleaning plan for your home.
-</p>
-
+<p>Always free quotes and flexible scheduling.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="contact">
+<!-- CTA -->
+<section class="cta">
 
-<h2>Request Your Free Quote Today</h2>
+<h2>Get Your Free Quote Today</h2>
 
-<p>
-Please contact Ibeth for more information and availability.
-</p>
+<p>Call now to check availability in your area.</p>
 
 <a class="button" style="background:white;color:#ff69b4;" href="tel:15712325668">
-571-232-5668
+Call 571-232-5668
 </a>
 
 </section>
 
-<footer class="footer">
+<!-- FOOTER -->
+<footer>
 
-<h3>Fairy Maids</h3>
-
-<p>
-Serving Northern Virginia, Washington DC & Parts of Maryland
-</p>
-
-<p>
-Family-Owned • Professional • Trusted Since 1990
-</p>
-
-<p>
-Phone: 571-232-5668
-</p>
+<p><strong>Fairy Maids</strong></p>
+<p>Serving Northern Virginia, Washington DC & Maryland</p>
+<p>Family-Owned • Trusted Since 1990</p>
+<p>571-232-5668</p>
 
 </footer>
 
